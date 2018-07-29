@@ -1,0 +1,48 @@
+{
+  "name": "@eq8/mvp-boot",
+  "version": "0.0.0",
+  "description": "TBD",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "npm run test:lint",
+    "prepush": "npm run test:lint && npm run test:unit",
+    "test": "npm run test:lint && npm run test:unit && npm run test:integration",
+    "test:lint": "eslint --cache --ext .js index.js lib",
+    "test:unit": "tape test/test.unit.js | faucet",
+    "test:integration": "tape test/test.integration.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eq8/mvp-boot.git"
+  },
+  "keywords": [
+    "eq8",
+    "mvp-boot"
+  ],
+  "author": "bbartolome",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/eq8/mvp-boot/issues"
+  },
+  "homepage": "https://github.com/eq8/mvp-boot#readme",
+  "dependencies": {
+    "express": "4.15.3",
+    "immutable": "3.8.1",
+    "lodash": "4.17.9",
+    "lru-cache": "4.1.2",
+    "request": "2.87.0",
+    "requirejs": "2.3.5",
+    "rethinkdb": "2.3.3",
+    "semver": "5.5.0",
+    "url-parse": "1.4.1",
+    "winston": "3.0.0",
+    "yargs": "12.0.1"
+  },
+  "devDependencies": {
+    "eslint": "5.0.1",
+    "eslint-config-eslint": "4.0.0",
+    "faucet": "0.0.1",
+    "husky": "0.14.3",
+    "tape": "4.9.1"
+  }
+}
