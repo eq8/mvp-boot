@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "TBD",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "scripts": {
     "precommit": "npm run test:lint",
     "prepush": "npm run test:lint && npm run test:unit",
