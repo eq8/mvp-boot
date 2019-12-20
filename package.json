@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "eslint": "5.2.0",
-    "eslint-config-eslint": "5.0.1",
+    "eslint-config-eslint": "6.0.0",
     "eslint-plugin-node": "7.0.1",
     "faucet": "0.0.1",
     "husky": "0.14.3",
